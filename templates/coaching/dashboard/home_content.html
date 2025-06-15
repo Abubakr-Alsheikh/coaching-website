@@ -28,16 +28,32 @@
                     <textarea class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
                            id="hero_description" name="hero_description" rows="4" required>{{ home_content.hero_description }}</textarea>
                 </div>
+                <!-- New Fields Start -->
+                 <div class="mb-4">
+                    <label class="mb-2 block text-sm font-bold text-gray-700" for="journey_title">
+                        العنوان الرئيسي لقسم رحلتي (e.g., "رحلتي")
+                    </label>
+                    <input class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                           id="journey_title" name="journey_title" type="text" value="{{ home_content.journey_title }}" required>
+                </div>
+                <div class="mb-4">
+                    <label class="mb-2 block text-sm font-bold text-gray-700" for="journey_subtitle">
+                        العنوان الفرعي لقسم رحلتي
+                    </label>
+                    <input class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
+                           id="journey_subtitle" name="journey_subtitle" type="text" value="{{ home_content.journey_subtitle }}" required>
+                </div>
+                <!-- New Fields End -->
                  <div class="mb-4">
                     <label class="mb-2 block text-sm font-bold text-gray-700" for="about_title">
-                        عنوان قسم رحلتي
+                        عنوان المحتوى في قسم رحلتي
                     </label>
                     <input class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
                            id="about_title" name="about_title" type="text" value="{{ home_content.about_title }}" required>
                 </div>
                 <div class="mb-4">
                     <label class="mb-2 block text-sm font-bold text-gray-700" for="about_description">
-                        وصف قسم رحلتي
+                        وصف المحتوى في قسم رحلتي
                     </label>
                     <textarea class="focus:shadow-outline w-full appearance-none rounded border px-3 py-2 leading-tight text-gray-700 shadow focus:outline-none"
                            id="about_description" name="about_description" rows="4" required>{{ home_content.about_description }}</textarea>

@@ -174,6 +174,8 @@ def home_content(request):
     if request.method == "POST":
         home_content.hero_title = request.POST.get("hero_title")
         home_content.hero_description = request.POST.get("hero_description")
+        home_content.journey_title = request.POST.get("journey_title")  # Add this
+        home_content.journey_subtitle = request.POST.get("journey_subtitle")  # Add this
         home_content.about_title = request.POST.get("about_title")
         home_content.about_description = request.POST.get("about_description")
 

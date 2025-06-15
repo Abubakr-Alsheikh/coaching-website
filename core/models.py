@@ -132,6 +132,14 @@ class HomePageContent(models.Model):
         "Hero Description",
         default="We focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.",
     )
+    # New fields for the "Journey" section headings
+    journey_title = models.CharField("Journey Title", max_length=255, default="رحلتى")
+    journey_subtitle = models.CharField(
+        "Journey Subtitle",
+        max_length=255,
+        default="نحو تطوير الذات واكتشاف القدرات الكامنه",
+    )
+
     about_title = models.CharField("About Title", max_length=255, default="About")
     about_description = models.TextField(
         "About Description", default="Ex cumque tempore...."
